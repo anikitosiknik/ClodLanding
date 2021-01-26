@@ -6,8 +6,12 @@
     text-align: center;
 }
 
-body {
-    height: 100vh;
+html {
+    height: 100%;
+}
+
+body{
+    min-height: 100%;
     display: grid;
     align-content: space-between;
 }
