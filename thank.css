@@ -1,0 +1,131 @@
+* {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    text-align: center;
+}
+
+body {
+    height: 100vh;
+    display: grid;
+    align-content: space-between;
+}
+
+.thank {
+    display: grid;
+    margin: 20px;
+}
+
+.thank img {
+    align-self: center;
+    justify-self: center;
+    width: 50%;
+}
+
+.thank h1 {
+    margin-top: 30px;
+    font-size: 22px;
+}
+
+.thank h1 span {
+    color:#699C8B;
+    font-size: 24px;
+}
+
+.help {
+    margin-top: 40px;
+    font-size: 18px;
+    text-align: left;
+}
+
+.question {
+    margin-top: 40px;
+    font-size: 18px;
+    text-align: left;
+}
+
+.question_premium {
+        color: white;
+        background-color: #699C8B;
+        padding: 1px 6px;
+        border-radius: 10px;
+}
+
+.question_forever {
+    text-decoration: underline;
+}
+
+
+.getPremium {
+    display: inline-block;
+    color: white;
+    border: none;
+    outline: none;
+    background-color: #699C8B;
+    font-size: 24px;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    padding: 10px 40px;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+
+
+footer{ 
+    background-color: #515151;
+    color: #C4C4C4;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    padding: 20px;
+    display: grid;
+    grid-template-areas:
+     'header header'
+     'data tagline'
+    ;
+}
+
+.footer_header {
+    grid-area: header;
+    font-size: 22px;
+}
+
+.footer_contactData {
+    grid-area: data;
+    display: grid;
+    gap: 5px;
+}
+
+.footer_contactData div {
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: start;
+    gap: 10px;
+    align-content: center;
+    align-items: center;
+}
+
+.footer_contactData img {
+    width: 25px;
+    height: 25px;
+}
+.footer_contactData span {
+    font-size: 14px;
+}
+
+
+.footer_tagline {
+    grid-area: tagline;
+    justify-self: center;
+    align-self: center;
+}
+
+.footer_tagline h4 {
+    font-size: 16px;
+    margin: 0px;
+}
+
+.footer_tagline p {
+    font-size: 14px;
+}
