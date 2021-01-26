@@ -6,6 +6,11 @@
     text-align: center;
 }
 
+a, a:hover, a:focus, a:active {
+    text-decoration: none;
+    color: inherit;
+}
+
 html {
     height: 100%;
 }
@@ -114,7 +119,7 @@ footer{
     width: 25px;
     height: 25px;
 }
-.footer_contactData span {
+.footer_contactData a {
     font-size: 14px;
 }
 

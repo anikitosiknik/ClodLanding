@@ -8,16 +8,17 @@
     <link rel="stylesheet" href="form.css">
     <link rel="stylesheet" href="normalize.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <script src="./index.js" defer></script>
 </head>
 <body>
     <header >
         <img src="./public/logo.svg" alt="">
         <h1>Внесите Ваши данные для обратной связи</h1>
-        <form>
-            <input type="text" placeholder="Имя">
-            <input type="email" placeholder="E-mail">
-            <input type="tel" placeholder="Телефон">
-            <button>Отправить</button>
+        <form id="form">
+            <input type="text" id="name" placeholder="Имя" required minlength="3">
+            <input type="email" id="mail" placeholder="E-mail" required>
+            <input type="tel" id="phone" placeholder="Телефон" required minlength="5">
+            <button id="sent">Отправить</button>
         </form>
     </header>
     <footer>
@@ -25,15 +26,15 @@
         <div class="footer_contactData">
             <div>
                 <img src="./public/teleg.svg" alt="">
-                <span>@clod</span>
+                <a href="https://t.me/clodapp">@clod</a>
             </div>
             <div>
                 <img src="./public/inst.svg" alt="">
-                <span>@clodapp</span>
+                <a href="https://www.instagram.com/clod.app/">@clodapp</a>
             </div>
             <div>
                 <img src="./public/mail.svg" alt="">
-                <span>clod.support@gmail.com</span>
+                <a href="mailto: clod.support@gmail.com">clod.support@gmail.com</a>
             </div>
         </div>
 
