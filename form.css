@@ -32,6 +32,17 @@ header form {
     align-content: flex-start;
     gap: 15px;
 }
+header form p {
+    opacity: 0;
+    -webkit-transition: opacity 0.5s ease-in-out;
+    -moz-transition: opacity 0.5s ease-in-out;
+    transition: opacity 0.5s ease-in-out;
+}
+
+header form p.show {
+    opacity: 1;
+}
+
 
 header form input { 
     border: 3px solid #699C8B;
@@ -60,9 +71,9 @@ html {
 }
 
 body{
-    min-height: 100%;
-    display: grid;
-    align-content: space-between;
+    display: flex;
+	flex-direction: column;
+	min-height: 100%;
 }
 
 footer{ 

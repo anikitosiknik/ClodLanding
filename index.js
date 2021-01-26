@@ -3,11 +3,12 @@ const button = document.getElementById('sent');
 const name = document.getElementById('name');
 const mail = document.getElementById('mail');
 const phone = document.getElementById('phone');
+const thanks = document.getElementById('thanks');
 
 button.addEventListener('click', (e) => {
     if(button.form.checkValidity()) {
         e.preventDefault();
-        fetch('api', {
+        fetch('reg', {
                     method: 'POST', 
                     mode: 'cors',
                     cache: 'no-cache',
@@ -22,6 +23,11 @@ button.addEventListener('click', (e) => {
                         mail: mail.value,
                         phone: phone.value,
                     })
-                }).then(() => console.log('ok'))
+                }).then(() => {
+                    name.value = "";
+                    mail.value = "";
+                    mail.value = "";
+                    thanks.classList.toggle('show')
+                })
     }
 });
