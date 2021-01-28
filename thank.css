@@ -13,9 +13,24 @@ a, a:hover, a:focus, a:active {
 
 html {
     height: 100%;
+    
+}
+html::before {
+    z-index: 1;
+    content: '';
+    display: block;
+    background-image: url('./public/thank.png');
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    opacity: 0.15;
+    top: 0;
+    background-position: center;
+    background-size: cover;
 }
 
 body{
+    
     display: flex;
 	flex-direction: column;
     min-height: 100%;
@@ -23,8 +38,10 @@ body{
 }
 
 .thank {
+    z-index: 2;
     display: grid;
     margin: 20px;
+    
 }
 
 .thank img {
