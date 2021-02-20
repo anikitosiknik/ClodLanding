@@ -229,6 +229,7 @@ footer{
     padding: 20px;
     display: grid;
     grid-template-areas:
+    'payments payments'
      'header header'
      'data tagline'
     ;
@@ -276,4 +277,30 @@ footer{
 
 .footer_tagline p {
     font-size: 14px;
+}
+
+
+.wb_element {
+ 
+    margin: 15px;
+}
+
+.wb-stl-custom1 {
+    margin: 0;
+}
+
+.wb-stl-custom1 span {
+    font-size: 14px;
+    text-align: left;
+    display: block;
+    word-wrap:break-word;
+}
+
+.payments {
+    grid-area: payments;
+    display: grid;
+}
+
+.payments img {
+   width: 100%; 
 }
