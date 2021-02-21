@@ -304,3 +304,19 @@ footer{
 .payments img {
    width: 100%; 
 }
+
+.price {
+    margin: 15px;
+}
+
+.price div {
+    margin-top: 15px;
+}
+
+.price div p {
+    margin: 3px;
+    font-size: 14px;
+    text-align: left;
+    display: block;
+    word-wrap:break-word;
+}
