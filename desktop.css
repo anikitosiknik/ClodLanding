@@ -1,0 +1,27 @@
+@media (min-width: 700px) {
+    .price {
+        display: grid;
+        grid-auto-flow: column;
+        justify-content: center;
+        justify-items: center;
+        background: #F7F7F7;
+        margin: 20px 50px;
+    }
+    .price .price_user {
+        grid-template-rows: 0.5fr 0.3fr 0.1fr 1.5fr 0.8fr;
+        width: 70%;
+    }
+
+    footer {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas: 
+        'header header header'
+        'data payments info'
+        '. payments info'
+        ;
+    }
+
+    .footer_contactData {
+        justify-self: center;
+    }
+}

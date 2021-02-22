@@ -209,12 +209,19 @@ box-shadow: 0px 6px 5px 0px rgba(0,0,0,0.55);
     font-size: 24px;
     margin-top: 30px;
     margin-bottom: 40px;
-    padding: 10px 40px;
-    border-radius: 15px;
+    padding: 10px 35px;
+    border-radius: 40px;
     text-decoration: none;
     -webkit-box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.25);
 -moz-box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.25);
 box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.25);
+width: fit-content;
+justify-self: center;
+height: fit-content;
+}
+
+.video_button span {
+    color: #FFD226;
 }
 
 
@@ -226,24 +233,30 @@ footer{
     color: #C4C4C4;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
-    padding: 20px;
+    /* padding: 20px; */
     display: grid;
-    grid-template-areas:
-    'payments payments'
-     'header header'
-     'data tagline'
+    grid-template-areas: 
+    'header'
+    'data'
+    'payments'
+    'info'
     ;
 }
+
+
 
 .footer_header {
     grid-area: header;
     font-size: 22px;
+    margin: 20px;
 }
 
 .footer_contactData {
     grid-area: data;
     display: grid;
     gap: 5px;
+
+    margin: 20px;
 }
 
 .footer_contactData div {
@@ -265,9 +278,12 @@ footer{
 
 
 .footer_tagline {
+    display: none;
     grid-area: tagline;
     justify-self: center;
     align-self: center;
+
+    margin: 20px;
 }
 
 .footer_tagline h4 {
@@ -281,8 +297,8 @@ footer{
 
 
 .wb_element {
- 
-    margin: 15px;
+    margin: 20px;
+    grid-area: info;
 }
 
 .wb-stl-custom1 {
@@ -293,12 +309,34 @@ footer{
     font-size: 14px;
     text-align: left;
     display: block;
-    word-wrap:break-word;
+
+    font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 14px;
+letter-spacing: 0.02em;
+
+color: #C4C4C4;
+   
+    word-break: break-word;
 }
 
 .payments {
     grid-area: payments;
     display: grid;
+}
+
+.payments .video_button {
+    margin: 7px;
+    font-family: Roboto;
+font-style: normal;
+font-weight: 500;
+font-size: 15px;
+line-height: 18px;
+min-width: 200px;
+color: #C4C4C4;
+background: rgba(0,0,0,0.16);
 }
 
 .payments img {
@@ -309,14 +347,58 @@ footer{
     margin: 15px;
 }
 
-.price div {
+.price .price_user {
     margin-top: 15px;
+    display: grid;
+}
+
+.price img {
+    justify-self:center;
+}
+
+.price h2 {
+    font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 25px;
+line-height: 29px;
+letter-spacing: -0.165px;
+
+color: #515151;
+}
+
+.price h3 {
+
+    margin: 10px 0;
+    margin: 0px;
+    font-family: Roboto;
+font-style: normal;
+font-weight: 500;
+font-size: 15px;
+line-height: 18px;
+
+letter-spacing: -0.165px;
+
+color: #699C8B;
 }
 
 .price div p {
-    margin: 3px;
+    margin: 5px 3px;
     font-size: 14px;
     text-align: left;
     display: block;
     word-wrap:break-word;
+    font-family: Roboto;
+font-style: normal;
+font-weight: 500;
+font-size: 15px;
+line-height: 18px;
+letter-spacing: -0.165px;
+}
+
+.price div p.ok::first-letter {
+    color: #699C8B;
+}
+.price div p.cross::first-letter {
+    color: #E24E4E
 }
