@@ -14,18 +14,20 @@ a, a:hover, a:focus, a:active {
 /* HEADER */
 
 header {
-    background-image: url('./public/header_bg.png');
+    background-image: url('./public/header1.png');
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 60vh;
 }
 
-header div {
-    padding-top: 10px;
+header .logo {
+    padding-top: 50px;
+    padding-left: 57px;
     display: grid;
     flex-direction: column;
-    justify-content: end;
-    align-items: flex-end;
+    justify-content: start;
+    align-items: flex-start;
+    align-content: flex-start;
 }
 
 
@@ -131,9 +133,6 @@ header div {
     background: #699C8B;
     border-radius: 20px;
     padding: 20px 36px;
-    -webkit-box-shadow: 0px 6px 5px 0px rgba(0,0,0,0.55);
--moz-box-shadow: 0px 6px 5px 0px rgba(0,0,0,0.55);
-box-shadow: 0px 6px 5px 0px rgba(0,0,0,0.55);
 }
 
 .how_point {
