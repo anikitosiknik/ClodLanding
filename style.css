@@ -14,20 +14,32 @@ a, a:hover, a:focus, a:active {
 /* HEADER */
 
 header {
-    background-image: url('./public/header1.png');
+    background-image: url('./public/header.png');
+    min-height: 40vh;
     background-repeat: no-repeat;
-    background-size: cover;
-    min-height: 60vh;
-}
-
+    background-size: 200%;
+    background-position: 60% 35%;
+    position: relative;
+    overflow: hidden;
+    }
 header .logo {
-    padding-top: 50px;
-    padding-left: 57px;
+    position: absolute;
+    top: 40px;
+    right: -20px;
     display: grid;
     flex-direction: column;
     justify-content: start;
     align-items: flex-start;
     align-content: flex-start;
+   
+}
+
+.logo img {
+    width: 70%;
+}
+.logo span {
+    font-size: 16px;
+    justify-self: flex-start;
 }
 
 
@@ -35,6 +47,11 @@ header .logo {
 
 .interest {
     margin-bottom: 0;
+}
+
+.interest .video_button {
+    font-size: 16px;
+    margin: 15px  ;
 }
 .interest_text{
     position: relative;

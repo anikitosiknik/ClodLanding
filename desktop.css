@@ -1,39 +1,45 @@
+
+
+
 @media (min-width: 700px) {
 
    header {
-       display: grid;
-       grid-template-columns: 1fr 1fr;
+   background-image: url('./public/header.png');
+   min-height: 90vh;
+   background-repeat: no-repeat;
+   background-size: 120%;
+   background-position: 100% 35%;
+   position: relative;
    }
 
+
    header .logo {
-       right: 0;
-       top: 50%;
-       position: absolute;
-       padding: 0px;
-       transform: translate(50%, -100%);
+    top: 170px;
+    right: 230px;    
    }
-   .pic1 {
-    position: relative;
-    background-image: url('./public/header1.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-   }
-   .pic2 {
-    background-image: url('./public/header2.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-   }
+
+   .logo img {
+    width: 150%;
+}
+.logo span {
+    font-size: 20px;
+    justify-self: flex-start;
+}
 
 
     .interest {
         display: grid;
         justify-items: center;
     }
+    .interest .video_button {
+        font-size: 40px;
+        margin-top: 25px;
+    }
     
     .interest_text {
         max-width: 780px;
         top: 0;
-        margin-top: 150px;
+        margin-top: 30px;
         font-size: 35px;
     }
 
