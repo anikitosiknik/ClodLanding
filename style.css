@@ -50,8 +50,8 @@ header .logo {
 }
 
 .interest .video_button {
-    font-size: 16px;
-    margin: 15px  ;
+    font-size: 24px;
+    margin: 25px  ;
 }
 .interest_text{
     position: relative;
@@ -68,7 +68,7 @@ header .logo {
     color: white;
     background-color: #699C8B;
     padding: 2px 6px;
-    border-radius: 5px;
+    border-radius: 13px;
 }
 
 
