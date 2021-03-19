@@ -12,6 +12,9 @@
    position: relative;
    }
 
+   header a {
+       text-align: right;
+   }
 
    header .logo {
     top: 170px;
@@ -133,19 +136,6 @@
         width: 393px;
     }
 
-    .price {
-        display: grid;
-        grid-auto-flow: column;
-        justify-content: center;
-        justify-items: center;
-        background: #F7F7F7;
-        margin: 20px 50px;
-        border-radius: 100px;
-    }
-    .price .price_user {
-        grid-template-rows: 0.5fr 0.3fr 0.1fr 1.5fr 0.8fr;
-        width: 70%;
-    }
 
     footer {
         border-top-right-radius: 100px;
@@ -161,4 +151,46 @@
     .footer_contactData {
         justify-self: center;
     }
+
+
+
+
 }
+
+@media (min-width: 700px) { 
+    .price { 
+        flex-direction: row;
+    }
+
+}
+
+@media (min-width: 1100px) {
+    .price {
+        width: 1000px;
+        flex-direction: row;
+        border-radius: 100px;
+
+        margin: 100px auto;
+        padding: 100px;
+        gap: 100px;
+            }
+
+            .price img {
+                width: 300px;
+            }
+
+            .price_info h2 {
+            font-size: 39px;
+            }
+
+            .price_info p {
+
+    font-size: 20px;
+            }
+
+
+.price_info a{ 
+    padding: 10px 35px;
+    font-size: 24px;
+}
+ }

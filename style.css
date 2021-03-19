@@ -22,6 +22,18 @@ header {
     position: relative;
     overflow: hidden;
     }
+header a {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 35px;
+    text-align: left;
+    padding: 15px;
+    display: block;
+    
+    color: #515151;  
+}
 header .logo {
     position: absolute;
     top: 40px;
@@ -359,74 +371,58 @@ background: rgba(0,0,0,0.16);
    width: 100%; 
 }
 
-.price_user-img-container {
-    position: relative;
-    width: fit-content;
-    justify-self: center;
-}
-.price_user-img-container .additional {
-    position: absolute;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-    right: 0;
-}
-
-
-.price {
-    margin: 15px;
-}
-
-.price .price_user {
-    margin-top: 15px;
-    display: grid;
+.price { 
+    font-family: Roboto;
+    background: #F7F7F7;
+    border-radius: 50px;
+    gap: 50px;
+    padding: 50px;
+    margin: 50px auto;
+display: flex;
+width: 90vw;
+box-sizing: border-box;
+flex-direction: column;
 }
 
 .price img {
-    justify-self:center;
+    width: 150px;
+    align-self: center;
 }
 
-.price h2 {
+.price_info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.price_info h2 {
+    margin: 0;
     font-family: Roboto;
 font-style: normal;
 font-weight: bold;
-font-size: 25px;
-line-height: 29px;
+font-size: 23px;
 letter-spacing: -0.165px;
+text-align: left;
 
 color: #515151;
 }
-
-.price h3 {
-
-    margin: 10px 0;
-    margin: 0px;
+.price_info p {
     font-family: Roboto;
-font-style: normal;
-font-weight: 500;
-font-size: 15px;
-line-height: 18px;
-
-letter-spacing: -0.165px;
-
-color: #699C8B;
-}
-
-.price div p {
-    margin: 5px 3px;
-    font-size: 14px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    letter-spacing: -0.165px;
+    color: #515151; 
     text-align: left;
-    display: block;
-    word-wrap:break-word;
-    font-family: Roboto;
-font-style: normal;
-font-weight: 500;
-font-size: 15px;
-line-height: 18px;
-letter-spacing: -0.165px;
+    margin: 0;
 }
 
-.price div p.ok::first-letter {
-    color: #699C8B;
-}
-.price div p.cross::first-letter {
-    color: #E24E4E
-}
+.price_info a {
+    margin: 0;
+    padding: 7px 17px;
+    font-size: 20px;
+} 
+
+
